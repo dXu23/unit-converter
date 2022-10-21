@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <button id="theme-switch" aria-label="auto" aria-live="polite">
+                <div id="sun-and-moon">
+                    <div id="body"></div>
+                    <div id="mask"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                    <div class="ray"></div>
+                </div>
+            </button>
+            <section id="form-section">
+                <form id="convert-form">
+                    <h1>Metric/Imperial Unit Conversion</h1>
+                    <fieldset>
+                        <legend class="sr-only">Number Units</legend>
+                        <input id="num-units" type="number" step="any" name="num-units" value="1">
+                    </fieldset>
+                    <button>Convert</button>
+                </form>
+            </section>
+            <section id="results">
+                <div>
+                    <h2>Length (Meter / Feet)</h2>
+                    <p>
+                        <span id="from-meters" class="from">1</span> meters = 
+                        <span id="to-feet">3.281</span> feet |
+                        <span id="from-feet" class="from">1</span> feet = 
+                        <span id="to-meters">0.305</span> meters
+                    </p>
+                </div>
+                <div>
+                    <h2>Volume (Liters / Gallons)</h2>
+                    <p>
+                        <span id="from-liters" class="from">1</span> liters = 
+                        <span id="to-gallons">0.264</span> gallons |
+                        <span id="from-gallons" class="from">1</span> gallons = 
+                        <span id="to-liters">3.788</span> liters
+                    </p>
+                </div>
+                <div>
+                    <h2>Meters (Kilograms / Pounds)</h2>
+                    <p>
+                        <span id="from-kilograms" class="from">1</span> kilograms = 
+                        <span id="to-pounds">2.204</span> pounds |
+                        <span id="from-pounds" class="from">1</span> pounds = 
+                        <span id="to-kilograms">0.454</span> kilograms
+                    </p>
+                </div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+        <script src="theme-switch.js"></script>
+    </body>
+</html>
